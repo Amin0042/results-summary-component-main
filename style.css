@@ -11,8 +11,8 @@
   --Pale-blue: hsl(221, 100%, 96%);
   --Light-lavender: hsl(241, 100%, 89%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
-  --f-normal: 1.25rem;
-  --f-large: 3rem;
+  --f-normal: 1.125rem;
+  --f-large: 4rem;
   --fw-Small: 500;
   --fw-normal: 700;
   --fw-large: 800;
@@ -26,4 +26,44 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: var(--f-normal);
   font-weight: var(--fw-normal);
+  background-color: var(--Pale-blue);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  border-radius: 20px;
+  background-color: var(--White);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 20px 30px 40px hsla(224, 30%, 27%, 0.2);
+}
+.result {
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  color: var(--Light-lavender);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.score {
+  background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  padding: 3rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.score > h1 {
+  color: var(--White);
+  font-size: var(--f-large);
+  font-weight: var(--fw-large);
 }
