@@ -12,6 +12,7 @@
   --Light-lavender: hsl(241, 100%, 89%);
   --Dark-gray-blue: hsl(224, 30%, 27%);
   --f-normal: 1.125rem;
+  --f-medium: 1.5rem;
   --f-large: 4rem;
   --fw-Small: 500;
   --fw-normal: 700;
@@ -34,6 +35,21 @@ main {
   align-items: center;
   height: 100vh;
 }
+h1 {
+  font-size: var(--f-large);
+  font-weight: var(--fw-large);
+}
+h2 {
+  font-size: var(--f-medium);
+  font-weight: var(--fw-normal);
+}
+h3 {
+  font-size: var(--f-medium);
+  font-weight: var(--fw-large);
+}
+strong {
+  font-weight: var(--fw-large);
+}
 .card {
   border-radius: 20px;
   background-color: var(--White);
@@ -46,7 +62,6 @@ main {
   color: var(--Light-lavender);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   border-radius: 20px;
@@ -64,6 +79,39 @@ main {
 }
 .score > h1 {
   color: var(--White);
-  font-size: var(--f-large);
-  font-weight: var(--fw-large);
+}
+.summary {
+  padding: 2rem;
+}
+.bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--f-medium);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+}
+.bar div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.bar:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--Light-red);
+}
+
+.bar:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: var(--Orangey-yellow);
+}
+.bar:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: var(--Green-teal);
+}
+.bar:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: var(--Cobalt-blue);
 }
